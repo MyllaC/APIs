@@ -25,3 +25,11 @@ app.route('/').put((req, res) => {
   author = req.body.author
   res.send(author)
 })
+
+//DELETE (deve receber o id pela rota)
+
+
+app.route('/:identificador').delete((req, res) => {
+  
+  res.send(req.params.identificador)
+})

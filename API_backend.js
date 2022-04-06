@@ -27,8 +27,6 @@ app.route('/').put((req, res) => {
 })
 
 //DELETE (deve receber o id pela rota)
-
-
 app.route('/:identificador').delete((req, res) => {
   
   res.send(req.params.identificador)
